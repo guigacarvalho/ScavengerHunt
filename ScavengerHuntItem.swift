@@ -9,9 +9,12 @@
 import UIKit
 
 class ScavengerHuntItem: NSObject {
-
+    
     var name:String
     var photo:UIImage?
+    var date:String
+    var desc:String
+    
     var completed: Bool {
         get {
             if photo != nil {
@@ -21,7 +24,11 @@ class ScavengerHuntItem: NSObject {
         }
     }
     init (name: String) {
+        
         self.name = name
+        self.date = name
+        self.desc = name
+        
         
     }
 }

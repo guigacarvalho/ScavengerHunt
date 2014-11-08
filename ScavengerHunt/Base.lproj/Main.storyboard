@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sa7-yj-Znb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sa7-yj-Znb">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Add View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScavengerHunt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AddViewController" customModule="ScavengerHunt" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -36,11 +36,7 @@
                                 <action selector="cancel:" destination="BYZ-38-t0r" id="eSw-Qb-dug"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="fDH-6g-CpS">
-                            <connections>
-                                <segue destination="3BB-8R-c7o" kind="unwind" identifier="DoneItem" unwindAction="unwindToList:" id="i5r-o1-xck"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="fDH-6g-CpS"/>
                     </navigationItem>
                     <connections>
                         <outlet property="textField" destination="4aX-rn-5fN" id="2Mc-zs-CP9"/>
@@ -48,7 +44,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <exit id="3BB-8R-c7o" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3542" y="316"/>
         </scene>
@@ -82,11 +77,6 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="ScavengerHunt" id="myM-8T-s6h">
-                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="UoJ-wd-kNN">
-                            <connections>
-                                <segue destination="ozd-VJ-x6w" kind="presentation" identifier="EditItem" id="KRx-JE-rUf"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="AGU-mH-LxZ">
                             <connections>
                                 <segue destination="ozd-VJ-x6w" kind="presentation" identifier="AddItem" id="VQo-8Q-saZ"/>
@@ -119,7 +109,7 @@
         <!--Navigation Controller-->
         <scene sceneID="6Aj-rL-G4Z">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ozd-VJ-x6w" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="articleStoryboard" automaticallyAdjustsScrollViewInsets="NO" id="ozd-VJ-x6w" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tuu-5M-A4s">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -135,7 +125,4 @@
             <point key="canvasLocation" x="2730" y="316"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="KRx-JE-rUf"/>
-    </inferredMetricsTieBreakers>
 </document>

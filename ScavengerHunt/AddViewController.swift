@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  AddViewController.swift
 //  ScavengerHunt
 //
 //  Created by Guilherme B. Carvalho on 11/7/14.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class AddViewController: UIViewController {
 
     @IBOutlet weak var textField: UITextField!
     var scavengerItem: ScavengerHuntItem?
@@ -28,6 +28,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {

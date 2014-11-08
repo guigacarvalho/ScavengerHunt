@@ -19,19 +19,6 @@ class ListViewController: UITableViewController {
         cell.textLabel?.text = itemsList[indexPath.row].name
         return cell
     }
-    // = ["Cat", "Bird", "Brick"]
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let navigationController = segue.destinationViewController as UINavigationController
-        let viewController = navigationController.viewControllers.first! as UIViewController
-        
-        if segue.identifier == "AddItem" {
-            viewController.title = "New"
-        }
-        else if segue.identifier == "EditItem" {
-            viewController.title = "Edit"
-        }
-    }
     
     @IBAction func unwindToList (segue:UIStoryboardSegue) {
         if segue.identifier == "DoneItem" {
@@ -43,6 +30,7 @@ class ListViewController: UITableViewController {
             }
         }
     }
+    
     
 }
 

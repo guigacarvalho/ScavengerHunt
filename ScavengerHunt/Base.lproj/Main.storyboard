@@ -8,7 +8,7 @@
         <!--Article View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="articlevc" id="BYZ-38-t0r" customClass="ArticleViewController" customModule="ScavengerHunt" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="articlevc" id="BYZ-38-t0r" customClass="ArticleViewController" customModule="Clinicas" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,41 +17,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4aX-rn-5fN">
-                                <rect key="frame" x="26" y="536" width="548" height="30"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <webView contentMode="TopLeft" ambiguous="YES" misplaced="YES" paginationMode="topToBottom" paginationBreakingMode="column" translatesAutoresizingMaskIntoConstraints="NO" id="krz-i9-1YO">
-                                <rect key="frame" x="180" y="336" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </webView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xdz-RN-8s7">
-                                <rect key="frame" x="16" y="64" width="568" height="128"/>
+                                <rect key="frame" x="16" y="64" width="568" height="156"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="QFL-yg-TnM"/>
+                                    <constraint firstAttribute="height" constant="156" id="QFL-yg-TnM"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MpZ-7h-VXA">
-                                <rect key="frame" x="26" y="202" width="548" height="60.5"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MpZ-7h-VXA">
+                                <rect key="frame" x="26" y="228" width="548" height="109.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <webView contentMode="TopLeft" fixedFrame="YES" paginationMode="topToBottom" paginationBreakingMode="column" translatesAutoresizingMaskIntoConstraints="NO" id="krz-i9-1YO">
+                                <rect key="frame" x="16" y="443" width="553" height="137"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Xdz-RN-8s7" secondAttribute="trailing" id="0qq-AQ-whY"/>
-                            <constraint firstItem="4aX-rn-5fN" firstAttribute="top" secondItem="krz-i9-1YO" secondAttribute="bottom" constant="72" id="Are-QL-KZ0"/>
-                            <constraint firstItem="4aX-rn-5fN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G6L-f6-QGV"/>
-                            <constraint firstItem="MpZ-7h-VXA" firstAttribute="top" secondItem="Xdz-RN-8s7" secondAttribute="bottom" constant="10" id="Jm7-gs-TWn"/>
-                            <constraint firstItem="4aX-rn-5fN" firstAttribute="centerX" secondItem="Xdz-RN-8s7" secondAttribute="centerX" id="LFp-fw-bju"/>
+                            <constraint firstItem="MpZ-7h-VXA" firstAttribute="top" secondItem="Xdz-RN-8s7" secondAttribute="bottom" constant="8" id="Jm7-gs-TWn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="MpZ-7h-VXA" secondAttribute="trailing" constant="10" id="U3f-y6-m05"/>
-                            <constraint firstItem="4aX-rn-5fN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="Uol-Nk-Mcq"/>
-                            <constraint firstItem="4aX-rn-5fN" firstAttribute="centerX" secondItem="MpZ-7h-VXA" secondAttribute="centerX" id="YHa-34-NBS"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4aX-rn-5fN" secondAttribute="bottom" constant="34" id="dyT-wI-s9M"/>
                             <constraint firstItem="Xdz-RN-8s7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="h3S-ZN-EeM"/>
-                            <constraint firstItem="4aX-rn-5fN" firstAttribute="centerX" secondItem="krz-i9-1YO" secondAttribute="centerX" id="l67-VH-OEd"/>
                             <constraint firstItem="MpZ-7h-VXA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="lL8-bb-LJZ"/>
                             <constraint firstItem="Xdz-RN-8s7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="maR-rE-TGo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Xdz-RN-8s7" secondAttribute="trailing" id="oAM-Zh-nF8"/>
@@ -59,13 +47,7 @@
                             <constraint firstItem="Xdz-RN-8s7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="rWk-X0-CjG"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="vki-NW-qrL">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="wwU-Kh-1ih">
-                            <connections>
-                                <action selector="cancel:" destination="BYZ-38-t0r" id="hKe-zl-qSI"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="vki-NW-qrL"/>
                     <connections>
                         <outlet property="articleTitle" destination="MpZ-7h-VXA" id="NRd-3S-kjb"/>
                         <outlet property="content" destination="krz-i9-1YO" id="vns-cv-p3I"/>
@@ -77,10 +59,10 @@
             </objects>
             <point key="canvasLocation" x="2614" y="316"/>
         </scene>
-        <!--ScavengerHunt-->
+        <!--Clínicas Del Azúcar-->
         <scene sceneID="mIt-B2-JJX">
             <objects>
-                <tableViewController title="ScavengerHunt" id="yqr-cK-FNJ" customClass="ListViewController" customModule="ScavengerHunt" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Clínicas Del Azúcar" id="yqr-cK-FNJ" customClass="ListViewController" customModule="Clinicas" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="nE1-ui-aox">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -106,9 +88,7 @@
                             <outlet property="delegate" destination="yqr-cK-FNJ" id="B9l-4o-Ihy"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="ScavengerHunt" id="myM-8T-s6h">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="AGU-mH-LxZ"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Clínicas Del Azúcar" id="myM-8T-s6h"/>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="article" id="Tgg-As-Xah"/>
                     </connections>

@@ -38,7 +38,7 @@ class ItemsManager {
     
     init() {
         
-        var urlString = "http://clinicas.engr.scu.edu/index.php/clinicas_api/articles/count/1"
+        var urlString = "http://clinicas.engr.scu.edu/index.php/clinicas_api/articles"
         var error:NSError?
         
         var url = NSURL(string: urlString)

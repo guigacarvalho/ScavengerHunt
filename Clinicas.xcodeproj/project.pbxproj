@@ -32,14 +32,14 @@
 		799BAB841A0E2DA600633DE2 /* ArticleItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleItem.swift; path = ../ArticleItem.swift; sourceTree = "<group>"; };
 		799BAB861A0E3B6F00633DE2 /* itemsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = itemsManager.swift; sourceTree = "<group>"; };
 		79A9CBBA1A0E10EA00B448A8 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		79EB3D181A0DFE3C00AFC5B2 /* ScavengerHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScavengerHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79EB3D181A0DFE3C00AFC5B2 /* Clinicas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clinicas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79EB3D1C1A0DFE3C00AFC5B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79EB3D1D1A0DFE3C00AFC5B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79EB3D1F1A0DFE3C00AFC5B2 /* ArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		79EB3D221A0DFE3C00AFC5B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79EB3D241A0DFE3C00AFC5B2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		79EB3D271A0DFE3C00AFC5B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		79EB3D2D1A0DFE3C00AFC5B2 /* ScavengerHuntTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScavengerHuntTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79EB3D2D1A0DFE3C00AFC5B2 /* ClinicasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClinicasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79EB3D321A0DFE3C00AFC5B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79EB3D331A0DFE3C00AFC5B2 /* ScavengerHuntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScavengerHuntTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,8 +74,8 @@
 		79EB3D191A0DFE3C00AFC5B2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				79EB3D181A0DFE3C00AFC5B2 /* ScavengerHunt.app */,
-				79EB3D2D1A0DFE3C00AFC5B2 /* ScavengerHuntTests.xctest */,
+				79EB3D181A0DFE3C00AFC5B2 /* Clinicas.app */,
+				79EB3D2D1A0DFE3C00AFC5B2 /* ClinicasTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,9 +124,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		79EB3D171A0DFE3C00AFC5B2 /* ScavengerHunt */ = {
+		79EB3D171A0DFE3C00AFC5B2 /* Clinicas */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 79EB3D371A0DFE3C00AFC5B2 /* Build configuration list for PBXNativeTarget "ScavengerHunt" */;
+			buildConfigurationList = 79EB3D371A0DFE3C00AFC5B2 /* Build configuration list for PBXNativeTarget "Clinicas" */;
 			buildPhases = (
 				79EB3D141A0DFE3C00AFC5B2 /* Sources */,
 				79EB3D151A0DFE3C00AFC5B2 /* Frameworks */,
@@ -136,14 +136,14 @@
 			);
 			dependencies = (
 			);
-			name = ScavengerHunt;
+			name = Clinicas;
 			productName = ScavengerHunt;
-			productReference = 79EB3D181A0DFE3C00AFC5B2 /* ScavengerHunt.app */;
+			productReference = 79EB3D181A0DFE3C00AFC5B2 /* Clinicas.app */;
 			productType = "com.apple.product-type.application";
 		};
-		79EB3D2C1A0DFE3C00AFC5B2 /* ScavengerHuntTests */ = {
+		79EB3D2C1A0DFE3C00AFC5B2 /* ClinicasTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 79EB3D3A1A0DFE3C00AFC5B2 /* Build configuration list for PBXNativeTarget "ScavengerHuntTests" */;
+			buildConfigurationList = 79EB3D3A1A0DFE3C00AFC5B2 /* Build configuration list for PBXNativeTarget "ClinicasTests" */;
 			buildPhases = (
 				79EB3D291A0DFE3C00AFC5B2 /* Sources */,
 				79EB3D2A1A0DFE3C00AFC5B2 /* Frameworks */,
@@ -154,9 +154,9 @@
 			dependencies = (
 				79EB3D2F1A0DFE3C00AFC5B2 /* PBXTargetDependency */,
 			);
-			name = ScavengerHuntTests;
+			name = ClinicasTests;
 			productName = ScavengerHuntTests;
-			productReference = 79EB3D2D1A0DFE3C00AFC5B2 /* ScavengerHuntTests.xctest */;
+			productReference = 79EB3D2D1A0DFE3C00AFC5B2 /* ClinicasTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -178,7 +178,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 79EB3D131A0DFE3C00AFC5B2 /* Build configuration list for PBXProject "ScavengerHunt" */;
+			buildConfigurationList = 79EB3D131A0DFE3C00AFC5B2 /* Build configuration list for PBXProject "Clinicas" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -191,8 +191,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				79EB3D171A0DFE3C00AFC5B2 /* ScavengerHunt */,
-				79EB3D2C1A0DFE3C00AFC5B2 /* ScavengerHuntTests */,
+				79EB3D171A0DFE3C00AFC5B2 /* Clinicas */,
+				79EB3D2C1A0DFE3C00AFC5B2 /* ClinicasTests */,
 			);
 		};
 /* End PBXProject section */
@@ -243,7 +243,7 @@
 /* Begin PBXTargetDependency section */
 		79EB3D2F1A0DFE3C00AFC5B2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 79EB3D171A0DFE3C00AFC5B2 /* ScavengerHunt */;
+			target = 79EB3D171A0DFE3C00AFC5B2 /* Clinicas */;
 			targetProxy = 79EB3D2E1A0DFE3C00AFC5B2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -353,7 +353,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ScavengerHunt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Clinicas;
 			};
 			name = Debug;
 		};
@@ -363,7 +363,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ScavengerHunt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Clinicas;
 			};
 			name = Release;
 		};
@@ -381,7 +381,7 @@
 				);
 				INFOPLIST_FILE = ScavengerHuntTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ClinicasTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScavengerHunt.app/ScavengerHunt";
 			};
 			name = Debug;
@@ -396,7 +396,7 @@
 				);
 				INFOPLIST_FILE = ScavengerHuntTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ClinicasTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScavengerHunt.app/ScavengerHunt";
 			};
 			name = Release;
@@ -404,7 +404,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		79EB3D131A0DFE3C00AFC5B2 /* Build configuration list for PBXProject "ScavengerHunt" */ = {
+		79EB3D131A0DFE3C00AFC5B2 /* Build configuration list for PBXProject "Clinicas" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				79EB3D351A0DFE3C00AFC5B2 /* Debug */,
@@ -413,7 +413,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		79EB3D371A0DFE3C00AFC5B2 /* Build configuration list for PBXNativeTarget "ScavengerHunt" */ = {
+		79EB3D371A0DFE3C00AFC5B2 /* Build configuration list for PBXNativeTarget "Clinicas" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				79EB3D381A0DFE3C00AFC5B2 /* Debug */,
@@ -422,7 +422,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		79EB3D3A1A0DFE3C00AFC5B2 /* Build configuration list for PBXNativeTarget "ScavengerHuntTests" */ = {
+		79EB3D3A1A0DFE3C00AFC5B2 /* Build configuration list for PBXNativeTarget "ClinicasTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				79EB3D3B1A0DFE3C00AFC5B2 /* Debug */,

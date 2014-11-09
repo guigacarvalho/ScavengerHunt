@@ -19,15 +19,35 @@ class ItemsManager {
         }()
     
     
+    func parseJSON (jsonString: String) -> [String: AnyObject]? {
+        if let  data = jsonString.dataUsingEncoding(NSUTF8StringEncoding) {
+            var error:NSError?
+            if let json = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions(0), error: &error) as? [String: AnyObject]{
+                return json
+            } else if let error = error {
+                println("JSON Error \(error)")
+            } else {
+                println("Unk error")
+            }
+        }
+        return nil
+    }
+    
     init() {
-    
-    var urlString = "http://clinicas.engr.scu.edu/index.php/clinicas_api/articles"
-    var error:NSError?
-    
-    var url = NSURL(string: urlString)
-    
-    var result = String(contentsOfURL: url! , encoding: NSUTF8StringEncoding, error: &error)
-    println(result)
+        
+        var urlString = "http://clinicas.engr.scu.edu/index.php/ios_api/articles"
+        var error:NSError?
+        
+        var url = NSURL(string: urlString)
+        
+        var result = String(contentsOfURL: url! , encoding: NSUTF8StringEncoding, error: &error)
+            println(result)
+//        let  data = result?.dataUsingEncoding(NSUTF8StringEncoding)
+//        let json = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions(0), error: &error) as? [String: AnyObject]
+        if let dictionary = parseJSON(result!) {
+            println("Dictionary \(dictionary)")
+        }
+        
     }
     
 }
